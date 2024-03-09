@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta name="description" content="A well made and handcrafted Bootstrap 5 template">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('img/apple-touch-icon.png')}}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{asset('klar/img/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('klar/img/favicon-16x16.png')}}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{asset('klar/img/favicon.png')}}">
@@ -23,9 +23,9 @@
         font-weight: 300;
         font-display: swap;
         src: local(''),
-            url('{{asset('klar/fonts/inter-v12-latin-300.woff2')}}') format('woff2'),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */
-            url('{{asset('klar/fonts/inter-v12-latin-300.woff')}}') format('woff');
+        url("{{asset('klar/fonts/inter-v12-latin-300.woff2')}}") format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("{{asset('klar/fonts/inter-v12-latin-300.woff')}}") format('woff');
         /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 
@@ -36,9 +36,9 @@
         font-weight: 400;
         font-display: swap;
         src: local(''),
-            url('{{asset('klar/fonts/inter-v12-latin-regular.woff2')}}') format('woff2'),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */
-            url('{{asset('klar/fonts/inter-v12-latin-regular.woff')}}') format('woff');
+        url("{{asset('klar/fonts/inter-v12-latin-regular.woff2')}}") format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("{{asset('klar/fonts/inter-v12-latin-regular.woff')}}") format('woff');
         /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 
@@ -48,9 +48,9 @@
         font-weight: 500;
         font-display: swap;
         src: local(''),
-            url('{{asset('klar/fonts/inter-v12-latin-500.woff2')}}') format('woff2'),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */
-            url('{{asset('klar/fonts/inter-v12-latin-500.woff')}}') format('woff');
+        url("{{asset('klar/fonts/inter-v12-latin-500.woff2')}}") format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("{{asset('klar/fonts/inter-v12-latin-500.woff')}}") format('woff');
         /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 
@@ -60,9 +60,9 @@
         font-weight: 700;
         font-display: swap;
         src: local(''),
-            url('{{asset('klar/fonts/inter-v12-latin-700.woff2')}}') format('woff2'),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */
-            url('{{asset('klar/fonts/inter-v12-latin-700.woff')}}') format('woff');
+        url("{{asset('klar/fonts/inter-v12-latin-700.woff2')}}") format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("{{asset('klar/fonts/inter-v12-latin-700.woff')}}") format('woff');
         /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
     </style>
@@ -75,38 +75,32 @@
     <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-vw-5" tabindex="0">
         <div class="container">
             <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack"
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack"
                     viewBox="0 0 16 16">
                     <path
                         d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z" />
                     <path
                         d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z" />
-                </svg>
-                <span class="ms-md-1 mt-1 fw-bolder me-md-5">Klar</span>
+                </svg> -->
+                <img style="border-radius: 50%; width: 60px; height:60px;"
+                    src="{{ asset('images/LogoAndreaReyStudio.png') }}" />
+                <span class="ms-md-1 mt-1 h4 fw-lighter me-md-5">AndreaRey<span
+                        class="text-secondary">Studio</span></span>
             </a>
 
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-horizontal">
-                <li class="nav-item">
-                    <a class="nav-link fs-5" href="index.html" aria-label="Homepage">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-5" href="content.html" aria-label="A sample content page">
-                        Content
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-5" href="system.html" aria-label="A system message page">
-                        System
-                    </a>
-                </li>
+            @if (Route::has('login'))
+            <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
+                @auth
+                <a href="{{ url('/dashboard') }}" class="btn btn-outline-light">Dashboard</a>
+                @else
+                <a href="{{ route('login') }}" class="btn btn-outline-light">Iniciar Sesión</a>
 
-            </ul>
-            <a href="https://templatedeck.com/klar-html-template.html" aria-label="Download this template"
-                class="btn btn-outline-light">
-                <small>Download Template</small>
-            </a>
+                @if (Route::has('register'))
+                <a href="{{ route('register') }}" class="btn btn-outline-light">Registrase</a>
+                @endif
+                @endauth
+            </div>
+            @endif
         </div>
     </nav>
 
@@ -116,13 +110,14 @@
             <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center">
                 <div class="row d-flex align-items-center justify-content-center py-vh-5">
                     <div class="col-12 col-xl-10">
-                        <span class="h5 text-secondary fw-lighter">Our Mission</span>
-                        <h1 class="display-huge mt-3 mb-3 lh-1">We do ordinary stuff for cool people</h1>
+                        <span class="h5 text-secondary fw-lighter">Nuestra Misión</span>
+                        <h1 class="display-huge mt-3 mb-3 lh-1">Hacer lo hermoso extraordinario</h1>
                     </div>
                     <div class="col-12 col-xl-8">
-                        <p class="lead text-secondary">We are some sort of DAO working with AI, NFT´s, web 4.0 and the
-                            so called blockchain...in the Metaverse. You don´t understand a word? No problem, we
-                            neither!</p>
+                        <p class="lead text-secondary">Cada mujer es única y hermosa a su manera. ¡Descubre tu belleza interior y haz que brille!</p>
+                    </div>
+                    <div class="col-12 col-xl-8">
+                        <p class="lead text-secondary">Porque cuidar tus manos y enmarcar tu mirada es más que un servicio, es una declaración de estilo y confianza en ti misma.</p>
                     </div>
                     <div class="col-12 text-center">
                         <a href="#" class="btn btn-xl btn-light">Join us
@@ -143,17 +138,18 @@
                 <div class="position-absolute w-100 h-50 bg-dark bottom-0 start-0"></div>
                 <div class="row d-flex align-items-center position-relative justify-content-center px-0 g-5">
                     <div class="col-12 col-lg-6">
-                        <img src="{{asset('klar/img/webp/abstract18.webp')}}" width="2280" height="1732" alt="abstract image"
-                            class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up">
+                        <img src="{{asset('klar/img/webp/image_2024_3_9_262.webp')}}" width="2280" height="1732"
+                            alt="abstract image" class="img-fluid position-relative rounded-5 shadow"
+                            data-aos="fade-up">
                     </div>
                     <div class="col-12 col-md-6 col-lg-3">
-                        <img src="{{asset('klar/img/webp/abstract6.webp')}}" width="1116" height="1578" alt="abstract image"
-                            class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up"
+                        <img src="{{asset('klar/img/webp/image_2024_3_9_66.webp')}}" width="1116" height="1578"
+                            alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up"
                             data-aos-duration="2000">
                     </div>
                     <div class="col-12 col-md-6 col-lg-3">
-                        <img src="{{asset('klar/img/webp/abstract9.webp')}}" width="1116" height="848" alt="abstract image"
-                            class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up"
+                        <img src="{{asset('klar/img/webp/image_2024_3_9_846.webp')}}" width="1116" height="848"
+                            alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up"
                             data-aos-duration="3000">
                     </div>
                 </div>
@@ -163,13 +159,17 @@
             <div class="container px-vw-5 py-vh-5">
                 <div class="row d-flex align-items-center">
                     <div class="col-12 col-lg-7 text-lg-end" data-aos="fade-right">
-                        <span class="h5 text-secondary fw-lighter">What we do</span>
-                        <h2 class="display-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</h2>
+                        <!-- <span class="h5 text-secondary fw-lighter">What we do</span> -->
+                        <h3 class="pt-5">Que Hacemos</h3>
+                        <!-- <h2 class="display-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</h2> -->
+                        <img src="{{asset('klar/img/webp/image_2024_3_9_92.webp')}}" width="1116" height="848"
+                            alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up"
+                            data-aos-duration="3000">
                     </div>
                     <div class="col-12 col-lg-5" data-aos="fade-left">
-                        <h3 class="pt-5">Product Design & Strategy</h3>
-                        <p class="text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        <h3 class="pt-5">Pestañas</h3>
+                        <!-- <p class="text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
                             voluptua.<br>
                             <a href="#" class="link-fancy link-fancy-light me-2">Tell me more</a>
@@ -178,9 +178,12 @@
                                 <path fill-rule="evenodd"
                                     d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                             </svg>
-                        </p>
-                        <h3 class="border-top border-secondary pt-5 mt-5">Development & Engineering</h3>
-                        <p class="text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        </p> -->
+                        <img src="{{asset('klar/img/webp/image_2024_3_9_450.webp')}}" width="1116" height="848"
+                            alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up"
+                            data-aos-duration="3000">
+                        <h3 class="border-top border-secondary pt-5 mt-5">Cejas</h3>
+                        <!-- <p class="text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
                             voluptua.<br>
                             <a href="#" class="link-fancy link-fancy-light me-2">Tell me more</a>
@@ -189,7 +192,10 @@
                                 <path fill-rule="evenodd"
                                     d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                             </svg>
-                        </p>
+                        </p> -->
+                        <img src="{{asset('klar/img/webp/image_2024_3_9_664.webp')}}" width="1116" height="848"
+                            alt="abstract image" class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up"
+                            data-aos-duration="3000">
                     </div>
                 </div>
             </div>
@@ -202,8 +208,8 @@
                     <div class="col-12 col-md-6">
                         <div class="card bg-transparent mb-5" data-aos="zoom-in-up">
                             <div class="bg-dark shadow rounded-5 p-0">
-                                <img src="{{asset('klar/img/webp/abstract3.webp')}}" width="582" height="327" alt="abstract image"
-                                    class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
+                                <img src="{{asset('klar/img/webp/abstract3.webp')}}" width="582" height="327"
+                                    alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
                                 <div class="p-5">
                                     <h2 class="fw-lighter">Ipsum dolor est</h2>
                                     <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing
@@ -216,8 +222,8 @@
 
                         <div class="card bg-transparent" data-aos="zoom-in-up">
                             <div class="bg-dark shadow rounded-5 p-0">
-                                <img src="{{asset('klar/img/webp/abstract2.webp')}}" width="582" height="442" alt="abstract image"
-                                    class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
+                                <img src="{{asset('klar/img/webp/abstract2.webp')}}" width="582" height="442"
+                                    alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
                                 <div class="p-5">
                                     <h2 class="fw-lighter">Ipsum dolor est</h2>
                                     <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing
@@ -235,8 +241,8 @@
                         </div>
                         <div class="card bg-transparent mb-5 mt-5" data-aos="zoom-in-up">
                             <div class="bg-dark shadow rounded-5 p-0">
-                                <img src="{{asset('klar/img/webp/abstract17.webp')}}" width="582" height="390" alt="abstract image"
-                                    class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
+                                <img src="{{asset('klar/img/webp/abstract17.webp')}}" width="582" height="390"
+                                    alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
                                 <div class="p-5">
                                     <h2 class="fw-lighter">Ipsum dolor est</h2>
                                     <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing
@@ -249,8 +255,8 @@
 
                         <div class="card bg-transparent" data-aos="zoom-in-up">
                             <div class="bg-dark shadow rounded-5 p-0">
-                                <img src="{{asset('klar/img/webp/abstract4.webp')}}" width="582" height="327" alt="abstract image"
-                                    class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
+                                <img src="{{asset('klar/img/webp/abstract4.webp')}}" width="582" height="327"
+                                    alt="abstract image" class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
                                 <div class="p-5">
                                     <h2 class="fw-lighter">Ipsum dolor est</h2>
                                     <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing
@@ -271,10 +277,11 @@
                 <div class="row d-flex align-items-center">
 
                     <div class="col-12 col-lg-7">
-                        <img class="img-fluid rounded-5 mb-n5 shadow" src="{{asset('klar/img/webp/person9.webp')}}" width="512"
-                            height="512" alt="a nice person" loading="lazy" data-aos="zoom-in-right">
-                        <img class="img-fluid rounded-5 ms-5 mb-n5 shadow" src="{{asset('klar/img/webp/person11.webp')}}" width="512"
-                            height="512" alt="another nice person" loading="lazy" data-aos="zoom-in-up">
+                        <img class="img-fluid rounded-5 mb-n5 shadow" src="{{asset('klar/img/webp/person9.webp')}}"
+                            width="512" height="512" alt="a nice person" loading="lazy" data-aos="zoom-in-right">
+                        <img class="img-fluid rounded-5 ms-5 mb-n5 shadow"
+                            src="{{asset('klar/img/webp/person11.webp')}}" width="512" height="512"
+                            alt="another nice person" loading="lazy" data-aos="zoom-in-up">
                     </div>
                     <div class="col-12 col-lg-5 bg-dark rounded-5 py-5" data-aos="fade">
                         <span class="h5 text-secondary fw-lighter">Do you like faces?</span>
@@ -405,8 +412,8 @@
                             </p>
                             <div
                                 class="d-flex justify-content-start align-items-center border-top border-secondary pt-3">
-                                <img src="{{asset('klar/img/webp/person14.webp')}}" width="96" height="96" class="rounded-circle me-3"
-                                    alt="a nice person" data-aos="fade" loading="lazy">
+                                <img src="{{asset('klar/img/webp/person14.webp')}}" width="96" height="96"
+                                    class="rounded-circle me-3" alt="a nice person" data-aos="fade" loading="lazy">
                                 <div>
                                     <span class="h6 fw-5">Jane Doemunsky</span><br>
                                     <small class="text-secondary">COO, The Boo Corp.</small>
@@ -455,8 +462,8 @@
                                 ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
                             <div
                                 class="d-flex justify-content-start align-items-center border-top border-secondary pt-3">
-                                <img src="{{asset('klar/img/webp/person13.webp')}}" width="96" height="96" class="rounded-circle me-3"
-                                    alt="a nice person" data-aos="fade" loading="lazy">
+                                <img src="{{asset('klar/img/webp/person13.webp')}}" width="96" height="96"
+                                    class="rounded-circle me-3" alt="a nice person" data-aos="fade" loading="lazy">
                                 <div>
                                     <span class="h6 fw-5">Jane Doemunsky</span><br>
                                     <small class="text-secondary">COO, The Boo Corp.</small>
@@ -512,8 +519,8 @@
                                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                                 nisi ut aliquip ex ea commodo consequat."</p>
                             <div class="d-flex justify-content-start align-items-center border-top pt-3">
-                                <img src="{{asset('klar/img/webp/person16.webp')}}" width="96" height="96" class="rounded-circle me-3"
-                                    alt="a nice person" data-aos="fade" loading="lazy">
+                                <img src="{{asset('klar/img/webp/person16.webp')}}" width="96" height="96"
+                                    class="rounded-circle me-3" alt="a nice person" data-aos="fade" loading="lazy">
                                 <div>
                                     <span class="h6 fw-5">Jane Doemunsky</span><br>
                                     <small>COO, The Boo Corp.</small>
